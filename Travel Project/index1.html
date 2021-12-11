@@ -1,0 +1,377 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+
+    <link rel="stylesheet" href="css/styles1.css">
+    
+    <title>Travel</title>
+</head>
+<body>
+    <!--  header section -->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+    
+        <a href="#" class="logo"><span>T</span>ravel</a>
+    
+        <nav class="navbar">
+            <a href="index1.html">home</a>
+            <a href="#about">about</a>
+            <a href="#trips">trips</a>
+            <a href="lastminute.html">last minute</a>
+            <a href="#blog">blog</a>
+            <a href="contact1.html">contact</a>
+        </nav>
+    
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+</div>
+        <!-- login form ends -->
+
+        <!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>your adventure begins with us</h3>
+        <p>follow us, to the unknown</p>
+    </div>
+
+
+    <div class="video-container">
+        <video id="video-slider" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0"> 
+            <source src="images1/vid-1.mp4" type="video/webm"> 
+         Video not supported 
+        </video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- booking form section starts  -->
+
+<section class="book-form" id="book-form">
+
+    <form action="">
+        <div class="zoom-in inputBox">
+            <span>where to?</span>
+            <input type="text" placeholder="place name" value="">
+        </div>
+        <div class="zoom-in inputBox">
+            <span>when?</span>
+            <input type="date" value="" style="text-transform: uppercase;">
+        </div>
+        <div class="zoom-in inputBox">
+            <span>how many?</span>
+            <input type="number" placeholder="number of travelers" value="">
+        </div>
+        <input class="zoom-in btn" type="submit" value="find now">
+    </form>
+
+</section>
+
+            <!-- booking form section ends -->
+
+            <!-- about section starts -->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Why you schould choose us? <br> The best locations for you vacation</h2>
+                        <p class="about__description">You can find the most beautiful and pleasant places at the best 
+                            prices with special discounts, you choose the place we will guide you all the way to wait, get your 
+                            place now.
+                        </p>
+                        <a href="#" class="button btn btn_1">Reserve a place</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="images1/about1.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="images1/about2.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- about section ends -->
+
+            <!-- trip section starts -->
+
+ <section class="section trip" id="trips">
+    <div class="title">
+      <h1>
+        Plan Your Trip With Us
+      </h1>
+      <p>
+        Our travel guides are curated for our visitors and highlight activities in city based on your interests. Browse our guides for helpful travel information, exciting insider tips and finds, and great ideas that will make you feel like a local.
+      </p>
+    </div>
+
+    <div class="row container">
+      <div class="swiper-container slider-3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images1/vert-1.jpg" alt="hero image" />
+            <p class="p">Bali</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images1/vert-2.jpg" alt="" />
+            <p class="p">Italy</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images1/vert-3.jpg" alt="" />
+            <p class="p">Spain</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images1/vert-4.jpg" alt="" />
+            <p class="p">Porto</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images1/vert-5.jpg" alt="" />
+            <p class="p">New Zealand</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-next d-flex">
+        <i class="bx bx-chevron-right swiper-icon"></i>
+      </div>
+      <div class="custom-prev d-flex">
+        <i class="bx bx-chevron-left swiper-icon"></i>
+      </div>
+  </section>
+                <!-- trip section ends -->
+
+            <!-- destination section starts  -->
+
+<section class="destination" id="destination">
+
+    <div class="heading">
+        <span class="span">our destination</span>
+        <h1 class="h1">make yours destination</h1>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images1/img5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Miracle Resort</h3>
+                <span class="hotel-category">
+                    <input type="radio" name="star" id="star1"> <label for="star1"></label>
+                    <input type="radio" name="star" id="star2"> <label for="star2"></label>
+                    <input type="radio" name="star" id="star3"> <label for="star3"></label>
+                    <input type="radio" name="star" id="star4"> <label for="star4"></label>
+                </span>
+                <p>Lara, Anatalya & Bebek, Turkey</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images1/img6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Beatriz Playa & SPA</h3>
+                <span class="hotel-category">
+                    <input type="radio" name="star" id="star1"> <label for="star1"></label>
+                    <input type="radio" name="star" id="star2"> <label for="star2"></label>
+                    <input type="radio" name="star" id="star3"> <label for="star3"></label>
+                    <input type="radio" name="star" id="star4"> <label for="star4"></label>
+                    <input type="radio" name="star" id="star5"> <label for="star5"></label>
+                </span>
+                <p>Playa de Matagorda, Lanzarotte, Spain.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images1/img7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pajara Beach Hotel</h3>
+                <span class="hotel-category">
+                    <input type="radio" name="star" id="star1"> <label for="star1"></label>
+                    <input type="radio" name="star" id="star2"> <label for="star2"></label>
+                    <input type="radio" name="star" id="star3"> <label for="star3"></label>
+                    <input type="radio" name="star" id="star4"> <label for="star4"></label>
+                </span>
+                <p>Costa Calma, Fuerteventura, Spain</p>
+                </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images1/img8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Side Crown Palace</h3>
+                <span class="hotel-category">
+                    <input type="radio" name="star" id="star1"> <label for="star1"></label>
+                    <input type="radio" name="star" id="star2"> <label for="star2"></label>
+                    <input type="radio" name="star" id="star3"> <label for="star3"></label>
+                    <input type="radio" name="star" id="star4"> <label for="star4"></label>
+                </span>
+                <p>Side, Side & Antalya, Turkey</p>
+                </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images1/img9.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Hotel Costa Canaria</h3>
+                <span class="hotel-category">
+                    <input type="radio" name="star" id="star1"> <label for="star1"></label>
+                    <input type="radio" name="star" id="star2"> <label for="star2"></label>
+                    <input type="radio" name="star" id="star3"> <label for="star3"></label>
+                    <input type="radio" name="star" id="star4"> <label for="star4"></label>
+                    <input type="radio" name="star" id="star5"> <label for="star5"></label>
+                </span>
+                <p>San Augustin, Gran Canaria, Spain</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images1/img10.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Puerto Palace</h3>
+                <span class="hotel-category">
+                    <input type="radio" name="star" id="star1"> <label for="star1"></label>
+                    <input type="radio" name="star" id="star2"> <label for="star2"></label>
+                    <input type="radio" name="star" id="star3"> <label for="star3"></label>
+                    <input type="radio" name="star" id="star4"> <label for="star4"></label>
+                    <input type="radio" name="star" id="star5"> <label for="star5"></label>
+                </span>
+                <p>Puerto de la Cruz, Teneriffa, Spain</p>
+        </div>
+    </div>
+
+</section>
+
+                <!-- trips ends -->
+
+            <!-- NewsLetter Section -->
+
+ <section class="section newsletter">
+    <div class="row container">
+      <div class="col">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>
+          and get the best offers
+        </p>
+      </div>
+      <form class="form">
+        <div>
+          <input type="email" placeholder="Email" />
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- newsletter ends -->
+
+  <!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <p>Follow Us!</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#trips" class="links"> <i class="fas fa-arrow-right"></i> trips</a>
+            <a href="#services" class="links"> <i class="fas fa-arrow-right"></i> services </a>
+            <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+            <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map"></i> München, Deutschland </p>
+            <p> <i class="fas fa-phone"></i> +49 123 456 </p>
+            <p> <i class="fas fa-envelope"></i> travel@gmail.com </p>
+            <p> <i class="fas fa-clock"></i> 10:00am - 15:00pm </p>
+        </div>
+
+        <div class="box"">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" class="email" id="">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="credit">created by <span>Natalia Valova</span> | Mentor:<span> Mazieh</span> | all rights reserved!</div>
+
+<!-- footer section ends -->
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/script1.js"></script>
+
+</script>
+</body>
+</html>
