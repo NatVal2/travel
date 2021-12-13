@@ -1,56 +1,39 @@
-function randomName() {
-    fetch('https://randomuser.me/api/?nat=us&randomapi')
-    .then(response => response.json())
-    .then(data => {
-        const person = data.results[0];
-        return firstName= person.name.first;
-    }).then(function(){
-        displayValue();
-    });
-}
-
-function displayValue() {
-    // var node = document.createElement("LI");
-    // var textnode = document.createTextNode(`${firstName}`);
-    // node.appendChild(textnode);
-    // document.getElementById("firstname").appendChild(node);
-
-    var name = document.getElementById("name");
-
-    name.innerHTML = ${person.firstName};
-}
-
-// document.getElementsByClassName("myBtn").addEventListener("click",getRandom);
-
-// function getRandom (){
-// fetch('https://randomuser.me/api/?results=100')
-// .then(resolve => resolve.json())
-// .then(data => {
-//         let user = data.results;
-
-
-//         user.forEach(function (user) {
-
-        
-//     const name = document.getElementById("name");
-//     const gender = document.getElementById('gender');
-//     const email = document.getElementById('email');
-//     const phone = document.getElementById('phone');
-//     const location = document.getElementById('country');
-//     const image =document.getElementById('image');
-
-//     name.innerText = ${user.name.title} ${user.name.first} ${user.name.last};
-//     gender.innerText = ${user.gender};
-//     email.innerText =  ${user.email};
-//     phone.innerText = ${user.phone}; 
-//     location.innerText = ${user.location.country};
-//     image.setAttribute(scr, ${user.picture.large});
-
-//         });
-
-//     });
-
+window.onload =()=>{
+    randomUserGenerator ()
 }
 
 
-getRandom();
+
+const randomUserGenerator = () => {
+    fetch (`https://randomuser.me/api`)
+    .then ((response) => {
+        return response.json ()
+    }) .then ((data) => {
+        showRandomUserData(data);
+    })
+}
+
+showRandomUserData = (randomUser) => {
+    let image = document.getElementsByClassName("image");
+    image.src = `${randomUser.results[0].picture.large}`
+
+    document.getElementById(`name`).innerText =
+            `${randomUser.results[0].name.title}
+            ${randomUser.results[0].name.first}
+            ${randomUser.results[0].name.last}`
+
+    document.getElementById(`gender`).innerText = 
+    `${randomUser.results[0].gender}`
+
+    document.getElementById(`email`).innerText = 
+    `${randomUser.results[0].email}`
+
+    document.getElementById(`country`).innerText = 
+    `${randomUser.results[0].location.country}`
+
+    document.getElementById(`phone`).innerText = 
+    `${randomUser.results[0].phone}`
+
+   
+}
+randomUserGenerator ();

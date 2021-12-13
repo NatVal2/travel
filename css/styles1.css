@@ -260,7 +260,7 @@
     text-align: center;
   }
   
-  .home .content h2{
+  .home .content h3{
     font-size: 4.5rem;
     color:#fff;
     text-transform: uppercase;
@@ -536,15 +536,15 @@ left: -60px;
 @media (max-width: 1200px) {
 .custom-next,
 .custom-prev {
-top: -15%;
+top: 35%;
 transform: translateY(0%);
 }
 .custom-next {
 right: 10px;
 }
 .custom-prev {
-left: auto;
-right: 70px;
+left: 20px;
+
 }
 }
               

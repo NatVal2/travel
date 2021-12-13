@@ -249,7 +249,7 @@
                   
                         /* destination  */
 .destination{
-    margin-top: 50px;
+    margin-top: 20px;
 }
             .heading .span{
                 font-size: 2rem;
@@ -354,7 +354,7 @@
 .section-center {
     width: 100%;
     position: relative;
-    left: 25%;
+    left: 23%;
 }
 
 h3,
@@ -365,14 +365,14 @@ h2{
  color: #545454;
  padding: 1%;
  position: relative;
- left: 3%;
+ left: 1%;
 }
 
 h3{
     font-size: 5rem;
     color:#550A21;
     font-weight: 700;
-   
+    margin-top: 7%;
 }
 
 h2{
